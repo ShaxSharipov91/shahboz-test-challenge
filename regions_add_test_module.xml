@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="regions_add_test_module">
+
+    <test name="regions_add">
+        <parameter name="label" value="Shahboz-Test-Challenge"/>
+        <parameter name="order" value="3"/>
+        <parameter name="tableRow" value="3"/>
+        <parameter name="tableCol" value="1"/>
+        <classes>
+            <class name="com.challenge.tests.RegionsTest">
+                <methods>
+                    <include name="testAddRegions"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

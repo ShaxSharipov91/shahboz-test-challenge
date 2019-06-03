@@ -9,13 +9,10 @@ public class LoginTest extends BaseTest {
 
     private BasePage basePage;
 
-    @Parameters({"username", "password", "pageTitle"})
-    @Test(priority=2)
-    public void successfulLogin(String username, String password, String expectedPageTitle)
-    {
+    @Parameters({"pageTitle"})
+    @Test
+    public void successfulLogin(String expectedPageTitle) {
         basePage = new BasePage(driver);
-        basePage.goToLoginPage();
-        basePage.loginWith(username, password);
         String actualTitle = basePage.getPageTitle();
         Assert.assertEquals(actualTitle, expectedPageTitle);
     }

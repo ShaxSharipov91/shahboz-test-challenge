@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="dashboard_filter_test_module">
+
+    <test name="test_dashboard_filter_setting">
+        <parameter name="contactEmail" value="ash@test.com"/>
+        <parameter name="contactName" value="Mr. Ash Ben"/>
+        <classes>
+            <class name="com.challenge.tests.DashboardTest">
+                <methods>
+                    <include name="testContactsFilter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

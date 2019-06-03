@@ -1,13 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="login_test_module">
-    <test name="successful_login">
-        <parameter name="username" value="civihr_admin" />
-        <parameter name="password" value="civihr_admin" />
-        <parameter name="pageTitle" value="Dashboard | CiviHR demo site" />
+
+    <test name="test_successful_login">
+        <parameter name="pageTitle" value="Dashboard | CiviHR demo site"/>
         <classes>
             <class name="com.challenge.tests.LoginTest">
                 <methods>
-                    <include name="successfulLogin" />
+                    <include name="successfulLogin"/>
                 </methods>
             </class>
         </classes>
