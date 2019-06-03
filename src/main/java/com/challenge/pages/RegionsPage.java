@@ -9,8 +9,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import java.util.List;
-
 public class RegionsPage extends BasePage {
 
     //region Page Factory Elements
@@ -42,8 +40,7 @@ public class RegionsPage extends BasePage {
         PageFactory.initElements(webDriver, this);
     }
 
-    public void goToRegionsPage()
-    {
+    public void goToRegionsPage() {
         this.configureMenuItem.click();
         Actions actions = new Actions(webDriver);
         actions.moveToElement(this.jobRolesSubMenu).perform();
@@ -51,8 +48,7 @@ public class RegionsPage extends BasePage {
 
     }
 
-    public void addRegion(String label, String order)
-    {
+    public void addRegion(String label, String order) {
         webDriverWait.until(ExpectedConditions.visibilityOf(this.addRegionButton)).click();
         webDriverWait.until(ExpectedConditions.visibilityOf(this.labelField)).sendKeys(label);
         webDriverWait.until(ExpectedConditions.visibilityOf(this.orderField)).clear();
@@ -60,10 +56,9 @@ public class RegionsPage extends BasePage {
         webDriverWait.until(ExpectedConditions.visibilityOf(this.saveRegionButton)).click();
     }
 
-    public String getValueFromRegionsTable(String table_row, String table_column)
-    {
+    public String getValueFromRegionsTable(String table_row, String table_column) {
         String value;
-        WebElement element = webDriver.findElement(By.xpath("//*[@id=\"options\"]/tbody/tr["+table_row+"]/td["+table_column+"]/div"));
+        WebElement element = webDriver.findElement(By.xpath("//*[@id=\"options\"]/tbody/tr[" + table_row + "]/td[" + table_column + "]/div"));
         webDriverWait.until(ExpectedConditions.visibilityOf(element));
         value = element.getText();
         return value;

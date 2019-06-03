@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [dashboard_filter_test_module]">
+    <test thread-count="5" name="test_dashboard_filter_setting(failed)">
+        <parameter name="contactEmail" value="ash@test.com"/>
+        <parameter name="contactName" value="Mr. Ash Ben"/>
+        <classes>
+            <class name="com.challenge.tests.DashboardTest">
+                <methods>
+                    <include name="quitTest"/>
+                    <include name="startTest"/>
+                    <include name="testContactsFilter"/>
+                </methods>
+            </class> <!-- com.challenge.tests.DashboardTest -->
+        </classes>
+    </test> <!-- test_dashboard_filter_setting(failed) -->
+</suite> <!-- Failed suite [dashboard_filter_test_module] -->

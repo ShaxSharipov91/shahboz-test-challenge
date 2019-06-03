@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [login_test_module]">
+    <test thread-count="5" name="test_successful_login(failed)">
+        <parameter name="pageTitle" value="Dashboard | CiviHR demo site"/>
+        <classes>
+            <class name="com.challenge.tests.LoginTest">
+                <methods>
+                    <include name="quitTest"/>
+                    <include name="successfulLogin"/>
+                    <include name="startTest"/>
+                </methods>
+            </class> <!-- com.challenge.tests.LoginTest -->
+        </classes>
+    </test> <!-- test_successful_login(failed) -->
+</suite> <!-- Failed suite [login_test_module] -->

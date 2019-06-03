@@ -1,6 +1,5 @@
 package com.challenge.tests;
 
-import com.challenge.pages.DashboardPage;
 import com.challenge.pages.RegionsPage;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;

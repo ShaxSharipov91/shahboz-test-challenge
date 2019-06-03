@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [regions_add_test_module]">
+    <test thread-count="5" name="regions_add(failed)">
+        <parameter name="tableCol" value="1"/>
+        <parameter name="label" value="Shahboz-Test-Challenge"/>
+        <parameter name="tableRow" value="3"/>
+        <parameter name="order" value="3"/>
+        <classes>
+            <class name="com.challenge.tests.RegionsTest">
+                <methods>
+                    <include name="testAddRegions"/>
+                    <include name="quitTest"/>
+                    <include name="startTest"/>
+                </methods>
+            </class> <!-- com.challenge.tests.RegionsTest -->
+        </classes>
+    </test> <!-- regions_add(failed) -->
+</suite> <!-- Failed suite [regions_add_test_module] -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+    <reporter-output>
+    </reporter-output>
+    <suite name="dashboard_filter_test_module" duration-ms="25784" started-at="2019-06-03T17:34:04Z"
+           finished-at="2019-06-03T17:34:30Z">
+        <groups>
+        </groups>
+        <test name="test_dashboard_filter_setting" duration-ms="25784" started-at="2019-06-03T17:34:04Z"
+              finished-at="2019-06-03T17:34:30Z">
+            <class name="com.challenge.tests.DashboardTest">
+                <test-method status="PASS"
+                             signature="startTest()[pri:0, instance:com.challenge.tests.DashboardTest@4ec6a292]"
+                             name="startTest" is-config="true" duration-ms="23783" started-at="2019-06-03T17:34:04Z"
+                             finished-at="2019-06-03T17:34:28Z">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- startTest -->
+                <test-method status="PASS"
+                             signature="testContactsFilter(java.lang.String, java.lang.String)[pri:0, instance:com.challenge.tests.DashboardTest@4ec6a292]"
+                             name="testContactsFilter" duration-ms="1899" started-at="2019-06-03T17:34:28Z"
+                             finished-at="2019-06-03T17:34:30Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[ash@test.com]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[Mr. Ash Ben]]>
+                            </value>
+                        </param>
+                    </params>
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- testContactsFilter -->
+                <test-method status="PASS"
+                             signature="quitTest()[pri:0, instance:com.challenge.tests.DashboardTest@4ec6a292]"
+                             name="quitTest" is-config="true" duration-ms="72" started-at="2019-06-03T17:34:30Z"
+                             finished-at="2019-06-03T17:34:30Z">
+                    <reporter-output>
+                    </reporter-output>
+                </test-method> <!-- quitTest -->
+            </class> <!-- com.challenge.tests.DashboardTest -->
+        </test> <!-- test_dashboard_filter_setting -->
+    </suite> <!-- dashboard_filter_test_module -->
+</testng-results>

@@ -1,0 +1,52 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:3.14
+    container_name: grid_hub
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.14
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  firefox:
+    image: selenium/node-firefox:3.14
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  login_test_module:
+    image: shax_alpine_server_image
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - TEST_SUITE=login_test_module.xml
+    volumes:
+      - ./login_test_module_output:/usr/test/automation/shahboz/test-output
+  dashboard_filter_test_module:
+    image: shax_alpine_server_image
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - TEST_SUITE=dashboard_filter_test_module.xml
+    volumes:
+      - ./dashboard_filter_test_output:/usr/test/automation/shahboz/test-output
+  regions_add_test_module:
+    image: shax_alpine_server_image
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - TEST_SUITE=regions_add_test_module.xml
+    volumes:
+      - ./regions_add_test_output:/usr/test/automation/shahboz/test-output
