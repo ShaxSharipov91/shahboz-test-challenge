@@ -1,36 +1,23 @@
-# Project Title
+# Shahboz Sharipov Test Challenge
 
-One Paragraph of project description goes here
+This Test Automation uses Java, Selenium, TestNG and Docker to automate the whole build process
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You need Docker on your host machine (where this test will be running). To check if you have Docker run this command on terminal/cmd:
 
 ```
-Give examples
+docker
 ```
+If you get docker description in your result, you have docker installed. Move to Running the tests section.
 
-### Installing
+### Installing Docker
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get a docker installed in your machine is in this link:
+* [DOCKER INSTALLATION](https://docs.docker.com/v17.12/install/) - DOCKER CONTAINERS
 
-Say what the step will be
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
