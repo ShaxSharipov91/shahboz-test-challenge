@@ -1,0 +1,7 @@
+Started by user [8mha:////4BWtFXrVBCb8se4ZzwTiv2iwS3Ebz7y7lrDh98YwUKpqAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL94ozECgCPRar4vwAAAA==[0mshax
+Building remotely on [8mha:////4OlsTvYmb3xfbDNYgVWPkQtbB1Mlim2HdG7O2/xgldyVAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6KfnJ2alF8YYAk9ORMccAAAA=[0mdocker_1 in workspace /Users/shax/Documents/Projects/UI-Automation-Challenge/jenkins/workspace/DOCKER_TEST
+[DOCKER_TEST] $ /bin/sh -xe /var/folders/2k/433w1sgd6pnclpb2hkgprld00000gn/T/jenkins5059991611750717259.sh
++ docker ps -a
+CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS                                              NAMES
+9b712a708be6        jenkins/jenkins:lts   "/sbin/tini -- /usr/…"   26 minutes ago      Up 26 minutes       0.0.0.0:50000->50000/tcp, 0.0.0.0:8050->8080/tcp   wizardly_ptolemy
+Finished: SUCCESS

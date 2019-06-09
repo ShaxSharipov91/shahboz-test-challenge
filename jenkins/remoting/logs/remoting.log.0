@@ -1,0 +1,27 @@
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: docker_1
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main$CuiListener <init>
+INFO: Jenkins agent is running in headless mode.
+Jun 08, 2019 11:38:52 AM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3.29
+Jun 08, 2019 11:38:52 AM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using /Users/shax/Documents/Projects/UI-Automation-Challenge/jenkins/remoting as a remoting work directory
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/, http://localhost:8050/]
+Jun 08, 2019 11:38:52 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    50000
+  Identity:      33:44:36:b4:1a:4b:9d:bf:6a:0e:1f:d5:0b:a2:83:dc
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:50000
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 33:44:36:b4:1a:4b:9d:bf:6a:0e:1f:d5:0b:a2:83:dc
+Jun 08, 2019 11:38:52 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
