@@ -16,9 +16,9 @@ pipeline {
         }
         stage('Push Image') {
             steps {
-			    withCredentials([usernamePassword(credentialsId: 'docker_hub', usernameVariable: 'user', passwordVariable: 'pass' )]) {
+                withCredentials([$class: 'UsernamePasswordMultiBinding', credentialsId:'docker_hub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']) {
                     //sh
-			        sh "docker login --username=shaxsharipov --password=${pass}"
+			        sh "docker login --username=${USERNAME} --password=${PASSWORD}"
 			        sh "docker push shax_alpine_server_image:latest"
 			    }
             }
