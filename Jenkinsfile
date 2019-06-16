@@ -16,11 +16,12 @@ pipeline {
         }
         stage('Push Image') {
             steps {
-			    withCredentials([usernamePassword(credentialsId: 'docker_hub')]) {
-                    //sh
-			        sh "docker login --username=${user} --password=${pass}"
-			        sh "docker push shax_alpine_server_image:latest"
-			    }                           
+                script {
+                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+                        app.push("${BUILD_NUMBER}")
+                        app.push("latest")
+                    }
+                }
             }
         }
     }
