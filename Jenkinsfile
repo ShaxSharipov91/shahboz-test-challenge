@@ -16,9 +16,9 @@ pipeline {
         }
         stage('Push Image') {
             steps {
-			    withCredentials([usernamePassword(credentialsId: 'docker_hub', passwordVariable: 'pass', usernameVariable: 'user' )]) {
+			    withCredentials([usernamePassword(credentialsId: 'docker_hub', usernameVariable: 'user', passwordVariable: 'pass' )]) {
                     //sh
-			        sh "docker login -u ${user} -p ${pass}"
+			        sh "docker login --username=${user} --password=${pass}"
 			        sh "docker push shax_alpine_server_image:latest"
 			    }
             }
