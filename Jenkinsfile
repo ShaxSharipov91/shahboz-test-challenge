@@ -11,7 +11,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh
-                sh "docker build -it='shax_alpine_server_image' ."
+                sh "docker build -t='shax_alpine_server_image' ."
             }
         }
         stage('Push Image') {
