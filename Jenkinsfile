@@ -18,7 +18,7 @@ pipeline {
             steps {
 			    withCredentials([usernamePassword(credentialsId: 'docker_hub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD' )]) {
                     //sh
-			        sh "docker login --username=${USERNAME} --password=${PASSWORD}"
+			        sh "docker login --username=${USERNAME} foo --password-stdin"
 			        sh "docker push shax_alpine_server_image:latest"
 			    }
             }
