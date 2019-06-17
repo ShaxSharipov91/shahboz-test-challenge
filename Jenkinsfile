@@ -11,14 +11,14 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh
-                sh "docker build -t='shax_alpine_server_image' ."
+                sh "docker build -it='shax_alpine_server_image' ."
             }
         }
         stage('Push Image') {
             steps {
 			    withCredentials([usernamePassword(credentialsId: 'docker_hub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD' )]) {
                     //sh
-			        sh "docker login --username=${USERNAME} foo --password-stdin"
+			        sh "docker login --username=${USERNAME} --password=${PASSWORD}"
 			        sh "docker push shax_alpine_server_image:latest"
 			    }
             }
